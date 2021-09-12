@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web components example</title>
+  <style>
+    h3{color:red}
+
+  </style>
+</head>
+<body>
+  <h3>Hello World</h3>
+  <user-card name="John" avatar = "https://item.kakaocdn.net/do/4b989c7a0e344b9709589556ffd80538617ea012db208c18f6e83b1a90a7baa7">
+    <div slot="email">john@gmail.com</div>
+    <div slot="phone">010-1234-3513</div>
+  </user-card>
+  <user-card name="Jane" avatar = "https://item.kakaocdn.net/do/75e402fe47122beeed4e853466d8b943f43ad912ad8dd55b04db6a64cddaf76d">
+    <div slot="email">jane@gmail.com</div>
+    <div slot="phone">010-3334-3683</div>
+  </user-card>
+
+  <script src="userCard.js"></script>
+</body>
+</html>
