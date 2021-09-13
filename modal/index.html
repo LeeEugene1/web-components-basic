@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="modal.js" defer></script>
+</head>
+<body>
+    <my-modal id="modal2">
+        <my-modal-title>title2</my-modal-title>
+        <div>hello modal2</div>
+        <my-modal-close id="close2"></my-modal-close>
+    </my-modal>
+    <my-modal id="modal1">
+        <my-modal-title>title1</my-modal-title>
+        <div>hello modal1</div>
+        <!-- <button id="close2">Close</button> -->
+        <my-modal-close id="close1"></my-modal-close>
+    </my-modal>
+    <button id="b1">Open modal1</button>
+    <button id="b2">Open modal2</button>
+
+    <script>
+        const modal1 = document.querySelector('#modal1')
+        const modal2 = document.querySelector('#modal2')
+
+
+        const open1 = document.querySelector('#b1')
+        const open2 = document.querySelector('#b2')
+
+        
+        const close1 = document.querySelector('#close1')
+        const close2 = document.querySelector('#close2')
+
+
+        open1.addEventListener('click',()=>{
+            modal1.open()
+        })
+
+        open2.addEventListener('click',()=>{
+            modal2.open()
+        })
+
+        close1.addEventListener('click',()=>{
+            modal1.close()
+        })
+
+        close2.addEventListener('click',()=>{
+            modal2.close()
+        })
+    </script>
+</body>
+</html>
